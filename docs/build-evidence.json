@@ -1,0 +1,44 @@
+{
+  "version": "1.3.1-life-quest-public",
+  "date": "2026-10-14",
+  "source_base": "1d2e42ba08b8136790afc8508949bc838a495c25",
+  "sdk": "ESP-IDF 5.5.3",
+  "sdk_commit": "2c211b236707889e8400c4dc5644dd5c4ee071e0",
+  "compiler": "riscv32-esp-elf GCC 14.2.0 esp-14.2.0_20251107",
+  "host_tests": "PASS",
+  "native_render": "PASS: 9 focus states + cleared + alternate fictional profile",
+  "firmware_build": "PASS",
+  "protected_layout": "PASS",
+  "public_source_audit": "PASS",
+  "device_tests": "NOT RUN",
+  "segments": {
+    "bootloader/bootloader.bin": {
+      "offset": "0x0",
+      "bytes": 21024,
+      "sha256": "96648393fbf8ff8b5d3cb1435db13d9954879a6912972fc6fa48ea988c0e87ae"
+    },
+    "partition_table/partition-table.bin": {
+      "offset": "0x8000",
+      "bytes": 3072,
+      "sha256": "a98e0784a39f37da373daf6dcef7a400af3e98b5344e89f414eeebedb1b5e07c"
+    },
+    "FoloToy-AI-Passport.bin": {
+      "offset": "0x10000",
+      "bytes": 834096,
+      "sha256": "b8e9a4c5c4db20a9d97262834e81dce28c3b1052fab652a0d53dd85a7db62b4b"
+    }
+  },
+  "merged": {
+    "bytes": 899632,
+    "sha256": "f8c78c23fa7ec6bc441e7937e9a79e7d0cb6a1164d38fe563881feef12397251",
+    "warning": "Build output only; not a device dump. Do not raw-flash on a provisioned device; use segments to preserve NVS."
+  },
+  "unverified": [
+    "physical buttons/wake",
+    "audio perception",
+    "battery accuracy",
+    "timed sleep/wake",
+    "NVS upgrade/rollback",
+    "this revision on real hardware"
+  ]
+}
